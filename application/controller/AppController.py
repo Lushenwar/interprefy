@@ -74,7 +74,7 @@ class AppController:
         if not self.is_recording:
             print("🔊 Starting system audio transcription & translation...")
             try:
-                deepgram_api_key = "7c6607da70f74e271198980712b8de0ac24b58f5"  # Remove for production
+                deepgram_api_key = "ADD_YOUR_APIKEY"
                 self.translator = Translator(self.profile_settings)
 
                 self.transcriber = Transcriber(
